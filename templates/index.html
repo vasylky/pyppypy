@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список книг</title>
+</head>
+<body>
+    <h1>Книги</h1>
+    <a href="/add">Додати книгу</a>
+    <ul>
+        {% for book in books %}
+        <li><strong>{{ book[1] }}</strong> — {{ book[2] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
